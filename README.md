@@ -1,6 +1,6 @@
 #page-tracker
 
-通过localStorage或cookies存贮页面的访问位置，再次访问页面时跳转到上次访问位置。
+通过localStorage或cookies存贮页面的滚动位置，再次访问页面时滚动到上次访问的位置。。
 
 1. 默认使用localStorage进行访问位置的存储，当localStorage不支持时，使用cookie存储。  
 1. 存储时使用的key为 `window.location.href` 的 `md5` 值。
