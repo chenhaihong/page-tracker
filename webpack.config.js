@@ -1,8 +1,6 @@
 const webpack = require('webpack');
 module.exports = {
-    entry: {
-    	'winpos': './index.js',
-	},
+    entry: './index.js',
     output: {
         path: './dist',
         filename: 'page-tracker.min.js',

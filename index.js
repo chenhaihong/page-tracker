@@ -1,1 +1,1 @@
-require('./src/page-tracker.js');
+import './src/page-tracker.js';
