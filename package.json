@@ -1,7 +1,7 @@
 {
 	"name": "page-tracker",
 	"version": "1.0.0",
-	"description": "通过localStorage或cookies存贮页面的滚动位置，再次访问页面时滚动到上次访问的位置",
+	"description": "通过localStorage或cookies存贮页面的滚动位置，再次访问页面时自动滚动到上次访问的位置",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
