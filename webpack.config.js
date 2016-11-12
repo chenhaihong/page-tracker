@@ -1,9 +1,13 @@
 const webpack = require('webpack');
+const _MIN = 1;
 module.exports = {
-    entry: './index.js',
+    entry: {
+      'page-tracker': './index.js'
+    },
     output: {
         path: './dist',
-        filename: 'page-tracker.min.js',
+        filename: _MIN ? '[name].min.js' : '[name].js',
+        libraryTarget: 'umd',
     },
 	//devtool: 'eval',
     module: {
@@ -12,7 +16,7 @@ module.exports = {
             {test: /\.json$/, exclude: /node_modules/, loader: 'json-loader'},
         ],
     },
-    plugins: [
+    plugins: _MIN ? [
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false,
@@ -21,5 +25,5 @@ module.exports = {
                 comments: false,
             },
         }),
-    ]
+    ] : [],
 };

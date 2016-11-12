@@ -1,15 +1,14 @@
 {
   "name": "page-tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "通过localStorage或cookies存贮页面的滚动位置，再次访问页面时自动滚动到上次访问的位置",
-  "main": "index.js",
+  "main": "./dist/page-tracker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
     "name": "Terry Chan",
-    "email": "1194445212@qq.com",
-    "url": "https://coding.net/u/haihong"
+    "email": "1194445212@qq.com"
   },
   "repository": {
     "type": "git",
